@@ -13,20 +13,21 @@
 			
 			ul {
 				margin:0;padding:0;
-				width:200px;
+				
 			}
 			
 			li {
 				list-style:none;
+                display: inline-block; /* Menu na horizontal */ 
 			}
 			
 			li a {
-				display:block;
 				text-decoration:none;
 				color:#FFF;
 				background-color:#09C;
-				margin-bottom:1px;
-				padding:5px 3px;
+				margin-bottom: 1px;
+				padding:5px 15px; /* o primeiro pad é para cima/baixo o segundo esq/dir*/ 
+                margin-left: -4px; /* distancia entre as opções */ 
 			}
 			
 			li a:hover {
