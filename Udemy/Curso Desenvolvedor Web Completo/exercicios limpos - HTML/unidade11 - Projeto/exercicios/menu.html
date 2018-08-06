@@ -6,34 +6,61 @@
         
         <style>
             
+            html {background-color:#F6F6F6}  
+            main {width: 955px; margin: -1px auto 10px; border: 1px solid #ddd; background-color: #FFF; font-family: Arial, Helvetica, sans-serif}
+            header {width: 955px; height: 95px}
+            
+            nav {width: 955x; background-color: #5D240A}
+            nav ul{list-style: none; margin: 0; padding: 4px}
+            nav ul li {display:inline-block}
+            nav ul li a {font-size: 0.85em; text-decoration: none; color: #FFF; padding: 4px 20px}
+            nav ul li a:hover {background-color: #B4531A}
+            
+            article {float: left; margin: 30px 20px; width: 600px}
+            #apoio {float:right; width: 300px; margin-top: 30px}
+            footer {clear:both; width: 700px; margin: 0 auto; font-size: 0.75em; text-align:centr; background-color: #ECECEC; padding: 5px }
+            
+            h1,h2,h4{font-family: Georgia, "Times New Roman", Times, serif; color: #C63; font-style: italic; letter-spacing: -0.05em}
+            h1{font-size: 2.6em; margin: 0 5px;}
+            h4{font-size: 1.6em; margin: 0 5px;}
+            
+            p, li {font-family: "Trebucht MS", Arial, Helvetica, sans-serif; font-size: 0.9em; color: #555; line-height: 1.8}
+            
         </style> 
 	</head>
 
     <body>
         <main>
             <!-- adicionar header -->
+            <header>
                 <img src="../imagens/topo_principal.jpg">
+                
+                
             <!-- finalizar header -->
-
+            </header>
             <!-- adicionar nav -->
-                <ul>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a href="info.html">Info</a></li>
-                  <li><a href="special-events.html">Special Events</a></li>
-                  <li><a href="dvd.html">DVD</a></li>
-                  <li><a href="location.htm">Location</a></li>
-                  <li><a href="menu.html">Menu</a></li>
-                  <li><a href="review.html">Review</a></li>
-                </ul>
+                <nav>
+                    <ul>
+                      <li><a href="../../unidade10%20-%20Estrutura%20e%20Semântica/exercicio/index.html">Home</a></li>
+                      <li><a href="info.html">Info</a></li>
+                      <li><a href="special_events.html">Special Events</a></li>
+                      <li><a href="dvd.html">DVD</a></li>
+                      <li><a href="location.htm">Location</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="review.html">Review</a></li>
+                     </ul>
+                </nav>
             <!-- finalizar nav -->
 
             <!-- adicionar article -->
+            <article>
+                <header>
                 <!-- adicionar header -->
                     <h1>Menu</h1>
                 <!-- finalizar header -->
-                
+                </header>
                 <h4>Appetizers</h4>
-                <p><img src="../imagens/appetizer.jpg" width="475" height="102" alt=""/></p>
+                <p><img src="../imagens/appetizer.jpg" title="Aperitivos" alt="Aperitivos" width="475" height="102"/></p>
                 <ul>
                   <li>Roasted Tomato Soup - served with goat cheese croutons and basil puree.</li>
                   <li>Summer Salad - organic butter lettuce with apples, blood oranges, and  gorgonzola, tossed with raspberry vinaigrette.</li>
@@ -43,7 +70,7 @@
                   </li>
                 </ul>
                 <h4>Entrees</h4>
-                <p><img src="../imagens/entree.jpg" width="475" height="102" alt=""/></p>
+                <p><img src="../imagens/entree.jpg" width="475" height="102" title="Entradas" alt="Entradas"/></p>
                 <ul>
                   <li>Pancetta-wrapped Sea Scallops - drizzled with tarragon puree. Served with baked cauliflower au gratin in a tangy Gruyere sauce.</li>
                   <li>Cajun Seafood Bouillabaisse - with crawfish, scallops, catfish, crab, and mussels. Served with Southern-style cornbread and honey butter. </li>
@@ -54,7 +81,7 @@
                   <li>Sake-soaked Kobe Beef Tartar - served with fontina-stuffed squash blossom tempura with cream wasabi sauce.</li>
                 </ul>
                 <h4>Desserts</h4>
-                <p><img src="../imagens/dessert.jpg" width="475" height="102" alt=""/></p>
+                <p><img src="../imagens/dessert.jpg" width="475" height="102" title="Sobremesas" alt="Sobremesas"/></p>
                 <ul>
                   <li>Tiramissu - cool, refreshing Italian dessert. </li>
                   <li>Baked Pears with Caramel Sauce - topped with house-made vanilla-bean ice cream.</li>
@@ -63,34 +90,38 @@
                   <li>Sacher Torte - three layers of dark chocolate cake, filled with house-made apricot jam, covered in a creamy, rich chocolate glaze.</li>
                 </ul>
                 <h4>Friday catch of the day</h4>
-                <p><img src="../imagens/friday_special.jpg" width="202" height="132" alt=""/></p>
+                <p><img src="../imagens/friday_special.jpg" width="202" height="132" title="Especial de Sexta" alt="Especial de Sexta"/></p>
                 <ul>
                   <li>Alaskan Halibut with a Rich Loire Valley Beurre Blanc Sauce - served with mashed purple Peruvian potatoes and haricot verts.</li>
                   <li>Recommended pairing: '98 Passi Emilio Vineyards Sauvignon Blanc </li>
                 </ul>
+            </article>
             <!-- finalizar article -->
 
             <!-- adicionar div de apoio -->
+            <div id="apoio">
                 <section class="fotos_apoio">
                     <h2>Mapa</h2>
-                    <img src="../imagens/mapa_como_chegar.gif" width="275" height="299" />
+                    <img src="../imagens/mapa_como_chegar.gif" width="275" height="299" title="Mapa" alt="Mapa" />
                 </section>
 
                 <section class="fotos_apoio">
                     <h2>Fotos</h2>
-                    <img src="../imagens/fotos.jpg" width="275" height="205" />
+                    <img src="../imagens/fotos.jpg" width="275" height="205" title="Fotos" alt="Fotos" />
                 </section>
 
                 <section class="fotos_apoio">
                     <h2>Vinhos</h2>
-                    <img src="../imagens/vinhos.jpg" width="275" height="203" />    
+                    <img src="../imagens/vinhos.jpg" width="275" height="203" title="Vinhos" alt="Vinhos"/>    
                 </section>
             <!-- finalizar div de apoio -->
-
+            </div>
+            <footer>
             <!-- adicionar rodape -->
                 <p>Cafe Fontenebleu - Rua Ernesto de Paula Santos, 187 Sala 506 - Recife-PE</p>
-                <p><small>&copy Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
+                <p><small> &copy;Copyright 2015 - iMedia Brasil todos os direitos reservados.</small></p>
             <!-- finalizar rodape -->
+            </footer>
         </main>
 		
     </body>
