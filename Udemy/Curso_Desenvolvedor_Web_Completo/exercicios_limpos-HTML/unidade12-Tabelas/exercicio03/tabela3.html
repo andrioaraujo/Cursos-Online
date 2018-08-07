@@ -57,13 +57,17 @@
 		}
         
         tbody tr:nth-child(odd) {
-            background-color: beige   
+            background-color:  #ddd
+        }        
+	   
+        
+        .coluna1{
+            background-color: #F0F0F0
         }
         
-        tbody tr:nth-child(even) {
-            background-color:antiquewhite  
-        }        
-	
+        .coluna_cinza{
+            background-color: #f0f0f0;
+        }
 	
 	</style>
 
@@ -72,6 +76,15 @@
         <table>
         
             <caption>Olimpiadas do Rio de Janeiro 2016</caption>
+            
+            <colgroup>
+                <col class="coluna_cinza">  <!-- Cada "col" é uma coluna, não tem como pular de uma para outra, é preciso coloar o "col" -->
+                <col>
+                <col  class="coluna_cinza">
+                <col>
+                <col class="coluna_cinza">
+            </colgroup>
+            
             <thead>
                 <tr>
                     <td></td>
