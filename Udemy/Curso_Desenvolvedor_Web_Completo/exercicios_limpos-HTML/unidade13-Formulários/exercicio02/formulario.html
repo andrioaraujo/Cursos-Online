@@ -11,6 +11,18 @@
         
         <h2>Formulário</h2>
         
+        <form action="destino.html" method="post">
+            <label for="nome">Nome Completo</label> <!-- "for" tem que ser igual ao "id" do input-->
+            <input type="text" name="nome" id="nome" size="20" maxlength="50">
+        
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" size="20" maxlength="12">
+            
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" size="20" maxlength="30">
+            
+            <input type="submit" value="Enviar" name="enviar" id="enviar">
+        </form>
     
     </body>
 </html>

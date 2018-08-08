@@ -3,10 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>Curso HTML5 Essencial</title>
+        
+        <script> /*Código em JS*/
+        
+            function mostrarResultado() {
+                
+                document.getElementById("resultado").innerHTML = document.getElementById("filhos").value;
+            }
+            
+        </script>
+        
     </head>
 
     <body>
         <form action="index.html" method="post">
+            
+            <input type="range" id="filhos" min="0" max="10" value="0" onchange="mostrarResultado()">
+            <span id="resultado"></span>
+            <!--Coloca uma barra de numeros em scroll e mostra o resultado -->
             
         </form>
     </body>
