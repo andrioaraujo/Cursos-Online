@@ -11,43 +11,67 @@
             }
 
             #menu {
+                width: 550px;
+                margin: 0 auto; /*menu centralizado*/
 
             }
 
             #menu ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
 
             }
 
             #menu ul li {
+                float: left;
+                position: relative;
 
             }
 
             /* Menu horizontal principal */
             #menu ul li a {
+                display: inline-block;
+                text-decoration: none;
+                color: darkgray;
+                background-color: #FFF;
+                padding: 5px 10px;
+                border: 1px solid darkgray;
+                margin-right: -5px; /*Fica uma linha de borda em cima da outra*/
+                width: 90px;
+                text-align: center; /*Texto centralizado*/
 
             }
 
             /* Submenu */
             #menu ul li ul {
+                display: none;
+                position: absolute;
+                padding-top: 5px; /*Deixa um espaço entre as opções sem "fechar" o menu*/
 
             }
 
             /* Itens do submenu */
             #menu ul li ul li a {
+                width: 110px; /*Deixa as opções do submenu no mesmo tamanho*/
+                margin-top: -1px; /*Tira a linha dupla entre um elemento e outro*/
 
             }
 
             #menu ul li ul li a:hover  {
+                background-color: #ddd;
 
             }
 
             /* PULO DO GATO!!  Faz aparecer o menu */
             #menu li:hover ul {
+                display: block;
 
             }
 
             /* Alterar a cor de background dos itens do menu */
             #menu ul li a:hover {
+                background-color:cornflowerblue;
 
             }
 
