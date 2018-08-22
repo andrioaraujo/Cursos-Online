@@ -4,33 +4,64 @@
         <meta charset="utf-8">
         <title>Curso de CSS</title>
         <style type="text/css">
+            
             html {
                 background-color:#EFEFEF;
             }
-
-            #principal {
-                width:600px;
-                margin:0 auto;
-                background-color:#9C3;
+            
+            body{
+                margin: 0;
             }
 
-            #janela {
-                width:300px;
+            main {
+                width:730px;
+                margin:0 auto; /*Centraliza o texto*/
+                background-color:#9C3;
+                padding: 10px;
+                content: "";     /*Arruma o local das div flutuantes*/
+                display: table;
+                clear: both;
+            } 
+
+            article {
+                /*margin: 10px;*/
             }
 
             p {
                 margin:0;
             }
+            
+            .janela{
+                float: left;
+                width:350px;
+                padding: 5px;
+                background-color: #FC3;
+                margin-right: 5px;
+
+            }
+            
         </style>
     </head>
 
 <body>
 	
-    <div id="principal">
-    	<div id="janela">
-	        <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>    
-        </div>
-    </div>
+    <main>
+        
+    	<article>
+            
+            <div class="janela">
+                <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>  
+            </div>
+            
+            <div class="janela">
+                <p>Cafe Townsend's visionary chef leads the way in a culinary revolution. Proclaimed by many to be the best chef in the world today, Chef Bienni blends earthy seasonal flavors and bold ingredients to create exquisite contemporary cuisine. </p>  
+            </div>
+            
+         <!--   <br style="clear: both"> -->
+            
+        </article>
+        
+    </main>
 
 </body>
 </html>

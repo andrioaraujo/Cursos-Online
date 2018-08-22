@@ -8,19 +8,33 @@
         <style>
 
             body {
-
+                font-family: Roboto, sans-serif;
             }
-
+            /* em = relativo a tela */
             h1 { 
-
+                font-size: 3em; /* 3em = 300% */
+                font-style: italic;
+                text-decoration: overline;
+                text-transform: capitalize; /* Deixa todas as primeiras letras maiusculas */
             }
 
             h4 {
-
+                font-size: 1.5em;
+                text-decoration: line-through;
             }
 
-            p {
-
+            p { 
+                font-size: 110%;
+                font-weight: 400;
+                text-align: center; /*align = alinhamento do texto*/
+                line-height: 2em; /*Espaço entre as linhas*/
+                text-indent: 1em; /*Indentação do texto*/
+                
+            }
+            
+            a{
+                text-decoration: none;  /*tira o sublinhado de hyperlinks*/
+                
             }
 
             .italico {
@@ -37,9 +51,9 @@
     </head>
 
     <body>
-        <h1>Cascading Style Sheets</h1>
+        <h1>cascading style sheets</h1>
         <h4>Origem: Wikipédia, a enciclopédia livre.</h4>
-        <p>Cascading Style Sheets (ou simplesmente CSS) uma linguagem de estilo utilizada para definir a apresentação de documentos escritos em uma linguagem de marcação, como ou XML. Seu principal benefício é prover a separação entre o formato e o conteúdo de um documento.</p>
+        <p><a href="#">Cascading</a> Style Sheets (ou simplesmente CSS) uma linguagem de estilo utilizada para definir a apresentação de documentos escritos em uma linguagem de marcação, como ou XML. Seu principal benefício é prover a separação entre o formato e o conteúdo de um documento.</p>
         <p>Em vez de colocar a formatação dentro do documento, o desenvolvedor cria um link (ligação) para uma página que contém os estilos, procedendo de forma idêntica para todas as páginas de um portal. Quando quiser alterar a aparência do portal basta portanto modificar apenas um arquivo.</p>
     </body>
 </html>
