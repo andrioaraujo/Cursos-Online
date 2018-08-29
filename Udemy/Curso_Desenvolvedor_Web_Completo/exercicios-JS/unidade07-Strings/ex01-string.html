@@ -3,6 +3,25 @@
         <title>Aulas de Javascript</title>
         <script>
             
+            var frase = "Meu time fez um gol"
+            
+            var primeiraLetra = frase.charAt(0); //Retorna a primeira letra / letra na posição (n)
+            
+            console.log(primeiraLetra);
+            
+            var letra = "";
+            var primeiraPalavra = "";
+            var i = 0;
+            
+            while(letra != " "){ //Pega a primeira palavra de uma frase
+                letra = frase.charAt(i);
+                primeiraPalavra += letra;
+                i++;
+            }
+            
+            console.log(primeiraPalavra);
+            
+            
         </script>
     </head>
     <body>

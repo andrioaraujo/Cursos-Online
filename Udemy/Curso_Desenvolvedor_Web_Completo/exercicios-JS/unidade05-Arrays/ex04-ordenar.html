@@ -2,11 +2,28 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
+            
+            function ordenarNumeros(a,b){
+                return a-b; //compara a com b para ordem crescente / b - a = decrescente
+            }
+            
             var salada = new Array();
             salada[0] = "Uva";
             salada[1] = "Mamão";
             salada[2] = "Pêra";
-            salada[3] = "Maçã";        
+            salada[3] = "Maçã";
+            
+            salada.push("Abacate");
+            
+            salada.sort(); //Sort por ordem alfabetica
+            console.log(salada);
+            
+            
+            var megaSena = new Array(34,10,3,2,1,59);
+           // megaSena.sort(); //sort por string, só avalia o primeiro valor 1 == "1"0
+            megaSena.sort(ordenarNumeros); //sort crescente
+            console.log(megaSena);
+            
         </script>
     </head>
     <body>

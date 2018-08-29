@@ -3,6 +3,28 @@
         <title>Aulas de Javascript</title>
         <script>
 
+             function ordenarNumeros(a,b){
+                return a-b; //compara a com b para ordem crescente / b - a = decrescente
+            }
+            
+            var sorteio;
+            var mega = new Array();
+            var i = 0;
+            
+            while(i < 6){
+                
+                sorteio = Math.ceil(Math.random()*60);
+                
+                if(mega.indexOf(sorteio) == -1){ //Só insere numero unicos
+                    mega.push(sorteio);
+                    i++;
+                } 
+            }
+            
+            mega.sort(ordenarNumeros); //Ordena os numeros em ordem crescente
+            
+            console.log(mega);
+            
         </script>
     </head>
     <body>

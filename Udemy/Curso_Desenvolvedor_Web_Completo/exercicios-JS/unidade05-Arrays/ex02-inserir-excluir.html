@@ -2,8 +2,16 @@
     <head>
         <title>Aulas de Javascript</title>
         <script>
-            var salada = ["Uva","Banana","Pera"] ;
+            var salada = ["Uva","Banana","Pera"];
+            
+            salada.push("Laranja"); //Adiciona um elemento no final do array
+            salada.unshift("Morango"); //Adiciona um elemento no inicio do array
+            
+            salada.pop(); //deleta o ultimo elemento do array
+            salada.shift(); //deleta o primeiro elemento do array
+            
             console.log(salada);
+            console.log(salada.length); //Numero de elemento em um array
         </script>
     </head>
     <body>

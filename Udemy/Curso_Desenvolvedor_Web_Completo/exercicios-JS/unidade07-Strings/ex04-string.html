@@ -3,6 +3,16 @@
         <title>Aulas de Javascript</title>
         <script>
 
+            var nome = "joao da silva sauro";
+            console.log(nome.toLocaleUpperCase()); //coloca todas as letras em maiusculas
+            
+            
+            var letrasMin = nome.toLocaleLowerCase();
+            var primeiraMax = nome.charAt(0).toLocaleUpperCase();
+            
+            var primeiroNome = primeiraMax + letrasMin.substr(1,letrasMin.length); //Primeira letra do nome em upper case
+            console.log(primeiroNome.split(" ")[0]);
+            
         </script>
     </head>
     <body>

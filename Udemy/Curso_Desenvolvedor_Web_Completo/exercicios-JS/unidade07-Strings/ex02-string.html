@@ -3,6 +3,24 @@
         <title>Aulas de Javascript</title>
         <script>
             
+            var nome = "Curso JS Fundamental";
+            var primeira = nome.substr(0,5); //Pega chars da posição 0 até a 5
+            
+            console.log(primeira);
+            
+            var name = "Joao Silva Sauro"
+            var first = "";
+            var letra = "";
+            var i = 0;
+            
+            while(letra != " "){ //Pega a primeira palavra de uma frase
+                letra = name.charAt(i);
+                first = name.substr(0,i);
+                i++;
+            }
+            
+            console.log(first)
+            
         </script>
     </head>
     <body>
