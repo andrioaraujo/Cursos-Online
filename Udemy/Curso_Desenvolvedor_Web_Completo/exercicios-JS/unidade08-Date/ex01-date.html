@@ -9,11 +9,21 @@
             
             console.log("GetDate =", agora.getDate());
             console.log("GetDay =", agora.getDay()); //0 = domingo, 1 = segunda...
+            
+            var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro",
+                        "Outubro", "Novembro", "Dezembro"];
             console.log("GetMonth =",agora.getMonth()); //0 = janeira, 1 = fevereiro...
+            console.log(meses[agora.getMonth()]);
+            
             console.log("GetFullYear =",agora.getFullYear());
+            
+            console.log(agora.getDay() + " de " + meses[agora.getMonth()] + " de " + agora.getFullYear());
             
           //  console.log("GetYear =",agora.getYear()); Não é mais utilizado
             
+            
+            var aniversario = new Date(1993,9,19); 
+            console.log(aniversario.getDay());
             
         </script>
     </head>

@@ -3,6 +3,19 @@
         <title>Aulas de Javascript</title>
         <script>
 
+            var produto = new Object(); // produto = new Object() == produto = {}
+            produto.nome = "Caneta"; // 
+            produto.preco = 1.99; // == var produto{nome:"Caneta",preco:"1.99",cor:"Azul"}
+            produto.cor = "Azul"; //
+            
+            function retornaInfo(){
+                return "Produto: " + this.nome + ", Valor: " + this.preco;
+            }
+            
+            produto.info = retornaInfo;
+            
+            console.log(produto.info());
+            
         </script>
     </head>
     <body>

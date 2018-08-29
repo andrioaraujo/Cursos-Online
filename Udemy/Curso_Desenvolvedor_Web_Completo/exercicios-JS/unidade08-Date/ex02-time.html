@@ -3,6 +3,27 @@
         <title>Aulas de Javascript</title>
         <script>
             
+            function doisDigitos(tempo){ //colocar um ZERO na frente de um valor que seja menor que 10
+                if(tempo < 10){
+                    return "0"+tempo;
+                }else{
+                    return tempo;
+                }
+            }
+            
+            var agora = new Date();            
+            console.log("Hora: " + agora.getHours());
+            console.log("Minuto: " + agora.getMinutes());
+            console.log("Segundo: " + agora.getSeconds());
+            
+            console.log(agora.getHours()+":"+agora.getMinutes()+":"+agora.getSeconds());
+
+            console.log(doisDigitos(agora.getHours())+":"+doisDigitos(agora.getMinutes())+":"+doisDigitos(agora.getSeconds()));
+            
+            var aniversario = new Date(1993,9,19,5,6,2); //dia-mes-ano-hora-minuto-segundo
+            console.log(aniversario);
+            
+            
         </script>
     </head>
     <body>
