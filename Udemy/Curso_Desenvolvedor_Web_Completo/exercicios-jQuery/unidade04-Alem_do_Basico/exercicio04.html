@@ -8,6 +8,11 @@
         <script>
 			$(function(e) {
 				
+               // $("li:last").remove(); //remove o ultimo elemento (:first / .classe)
+                
+                $("li:last").replaceWith("<li>Cruso Bootstrap</li>"); //troca o conteudo do ultimo elemento
+                $("ul").wrapAll("<div style='border:1px solid #Ccc'></div>"); //coloca uma div em todo o UL
+                
 			})
 		</script>        
     </head>

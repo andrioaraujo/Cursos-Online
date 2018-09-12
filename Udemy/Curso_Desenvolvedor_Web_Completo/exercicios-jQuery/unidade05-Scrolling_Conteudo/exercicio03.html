@@ -25,13 +25,35 @@
 			
 			nav li:first-child 	{ background-image:url(imagem/futebol.png) } 
 			nav li:nth-child(2) { background-image:url(imagem/basquete.png) }
+            
+            #primeira{
+                width: 300px;
+                height: 800px;
+                background-color: aquamarine;
+            }
+            
+            #segunda{
+                width: 300px;
+                height: 800px;
+                background-color:blueviolet;
+            }
 					
         </style>
          
         <script src="jquery-3.2.1.min.js"></script>
         <script>		
-			$( function(e) { 	
-
+			$( function(e) {
+                
+                $('nav li:nth-child(2)').click(function(e){
+                    
+                   // console.log($('#segunda').offset().top);
+                    
+                  //  $('html,body').animate({scrollTop:300}, 1000); //1000 ms = 1 sec / Animação de scroll para cima
+                    
+                    $('html,body').animate({scrollTop:$('#segunda').offset().top}, 1000); //vai dar o scroll corretamente pelo tamanho definido da tela
+                    
+                });                                   
+                                        
 			});			
 		</script>   
     </head>
@@ -42,5 +64,18 @@
             	<li id="tela2"></li>
             </ul>
         </nav>
+        
+        <div id="primeira">
+        
+        
+        
+        </div>
+        
+        <div id="segunda">
+        
+        
+        
+        </div>
+        
     </body>
 </html>

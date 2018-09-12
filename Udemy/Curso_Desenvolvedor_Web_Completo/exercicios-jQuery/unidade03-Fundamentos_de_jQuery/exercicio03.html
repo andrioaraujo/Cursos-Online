@@ -15,6 +15,13 @@
         <script>
 			$( function(e) {
 				
+                $("li[class]").css("background-color", "#FF9"); //muda a cor de fundo de quem contém uma class
+                
+                $("li[id]").css("background-color", "#ddd"); //muda a cor de fundo de quem tiver um ID
+                
+                $("li[id][title]").css("background-color", "red"); //muda a cor de fundo de quem tiver um ID e um TITLE
+                //"li[id='texto1']" / "li[class='verde']" / "li.vermelho" / "li#texto2"
+                
             });
 		</script>
     </head>
@@ -24,7 +31,7 @@
             <li class="vermelho">Curso HTML5 Essencial</li>
             <li class="verde">Curso CSS3 Essencial</li>
             <li id="texto1">Curso Javascript Essencial</li>
-            <li id="texto2">Curso jQuery Fundamental</li>             
+            <li id="texto2" title="Esse Curso">Curso jQuery Fundamental</li>             
     	</ul>
     </body>
 </html>

@@ -16,16 +16,23 @@
 			})
 			
 			function esconderObjeto() {
+                $('#janela').hide(300); //300 m/s desaparece
 			
 			}
 
 			function mostrarObjeto() {
+                $('#janela').show(2000, function(e){
+                    alert("Finalizou a animação");
+                    
+                }); // aparece em 2 segundos
 				
 			}
 
 			function reverterObjeto() {
+                $('#janela').toggle(300); // é o inverso do estado atual
 			
 			}
+            
 		</script>        
     </head>
 

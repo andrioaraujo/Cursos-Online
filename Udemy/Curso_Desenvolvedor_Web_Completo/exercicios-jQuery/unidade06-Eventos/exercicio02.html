@@ -8,14 +8,38 @@
 		</style>
         
         <script src="jquery-3.2.1.min.js"></script>
+        
         <script>
 			
+            $(function(e){
+              
+                $('#janela').hide();
+                
+              //  $('#mostrar').click( mostrarElemento);
+                
+               // $('#esconder').click( esconderElemento);
+                
+                $('#mostrar').hover(mostrarElemento, esconderElemento); //faz aparecer o conteudo quando o mouse passa no botao
+              
+            });
+            
+            
+            function mostrarElemento(e){
+                    
+                    $('#janela').show(); //faz aparecer um elemento
+                };  
+            
+            function esconderElemento(e){
+                    
+                    $('#janela').hide(); //faz sumir um elemento
+                };
+            
 		</script>        
     </head>
 
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
-        <input type="button" id="esconder" 	value="Esconder" />
+       <!-- <input type="button" id="esconder" 	value="Esconder" /> -->
         
         <div id="janela"></div>
     </body>

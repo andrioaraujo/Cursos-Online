@@ -9,7 +9,13 @@
         
         <script src="jquery-3.2.1.min.js"></script>
         <script>
-			$( function(e) {			
+            
+            function moverObjeto(){
+                $('#janela').animate({left:300},1000,"swing"); //1000 m/s O objeto faz uma animação para a direita
+            }
+            
+			$( function(e) {
+                $('#direita').click(moverObjeto);
 
 			})
 

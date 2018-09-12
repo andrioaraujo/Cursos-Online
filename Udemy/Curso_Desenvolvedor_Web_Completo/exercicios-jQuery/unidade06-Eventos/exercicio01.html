@@ -5,8 +5,35 @@
         <title>Curso jQuery Fundamental</title>
         
         <script src="jquery-3.2.1.min.js"></script>
+        
         <script>
 					
+            $(function(){
+            
+                $('#cursohtml').click(function(){  //diz qual evento vai ativar a funcao
+                    
+                    alert("Clicou no botao HTML");
+                })
+                
+                
+                function mostrarMensagem(){
+                    
+                    alert("Passou o mouse por cima do botao CSS");
+                    $('#cursocss').off("mouseover", mostrarMensagem); //off faz com que o evento aconteca somente uma vez / off() = mata todos os eventos
+                }
+                
+                
+                function mostrarMensagem2(){
+                    
+                    alert("Clicou no botao CSS");
+                }
+                
+                $('#cursocss').on("mouseover", mostrarMensagem);
+                $('#cursocss').on("click", mostrarMensagem2);
+
+            
+            });
+            
 		</script>        
     </head>
 

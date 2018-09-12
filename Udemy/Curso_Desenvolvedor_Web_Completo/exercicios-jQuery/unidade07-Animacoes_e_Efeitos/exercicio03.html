@@ -17,12 +17,20 @@
 			})
 			
 			function esconderObjeto() {
-			
+                $('#janela').slideUp(500); //esconde "encolhe"
+                
 			}
 
 			function mostrarObjeto() {
-			
+                $('#janela').slideDown(500, function(e){
+                    alert("Finalizado");
+                }); //mostra "abre"
+
 			}
+            
+            function reverterObjeto(){
+                $('#janela').slideToggle(500);
+            }
 
 		
 		</script>        
@@ -31,6 +39,8 @@
     <body>
         <input type="button" id="mostrar" 	value="Mostrar" />
         <input type="button" id="esconder" 	value="Esconder" />
+        <input type="button" id="reverso" 	value="Reverter" />
+
         
         
         <div id="janela"></div>

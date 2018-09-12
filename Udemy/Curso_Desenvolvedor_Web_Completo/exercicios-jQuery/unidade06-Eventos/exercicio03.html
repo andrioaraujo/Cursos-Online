@@ -9,9 +9,36 @@
 		</style>
         
         <script src="jquery-3.2.1.min.js"></script>
+        
         <script>
 
-	 	</script>        
+           /* function aplicarCorAzul(){
+                $('#janela').css('background-color', 'blue');
+            }*/
+            
+        /*    function aplicarCorVermelho(){
+                $('#janela').css('background-color', 'red');
+            }*/
+            
+            function aplicarCor(e){
+                $color = e.data.cor;
+                $('#janela').css('background-color',$color); //pode botar o e.data.cor direto na funcao
+                $('#janela').css('width',e.data.largura);
+            }
+            
+            $(function(){
+                
+                //$('#botaoazul').on("click", aplicarCorAzul);
+               // $('#botaovermelho').on("click", aplicarCorVermelho);
+                
+                $('#botaoazul').on("click",{cor:'blue',largura:'250px'},aplicarCor);
+                $('#botaovermelho').on("click",{cor:'red',largura:'350px'},aplicarCor);
+                $('#botaoverde').on("click",{cor:'green',largura:'450px'},aplicarCor);
+             
+            });
+            
+	 	</script>       
+        
     </head>
     
     

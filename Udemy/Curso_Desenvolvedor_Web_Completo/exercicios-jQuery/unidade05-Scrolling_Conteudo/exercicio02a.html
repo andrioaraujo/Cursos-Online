@@ -11,7 +11,12 @@
         <script src="jquery-3.2.1.min.js"></script>
         <script>
 			$(function(e) {
-				
+                
+                console.log("Posição 'top' do elemento: " + $('#janela').position().top);
+                console.log("Posição 'left' do elemento: " + $('#janela').position().left);               
+  
+                console.log("Posição 'top' do elemento: " + $('#janelinha').position().top); //posição em relação ao elemento pai
+                console.log("Posição 'left' do elemento: " + $('#janelinha').offset().left); // janela + janelinha + borda (em relação ao elemento "avo")
 			});
 		</script>        
     </head>

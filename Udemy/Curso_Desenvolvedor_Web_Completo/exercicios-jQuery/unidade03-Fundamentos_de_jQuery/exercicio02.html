@@ -11,14 +11,33 @@
             <a href="#">Argentina</a>
             <a href="#">Uruguai</a>
             <a href="#">Chile</a>
+            <a href="#">Colombia</a>
+
         </nav>
+        
+        <a href="#">Paraguai</a>
+
         
 		<!-- scripts -->
         <script src="jquery-3.2.1.min.js"></script>
-        <script>    
-        	$( function() {
+        <script>   
+            
+        /*	$( function() {
 				
-			})
+                alert("Essa página contém " + $("nav a").length + " Links"); // Conta o numero de tag (a) dentro da tag (nav)
+            
+                
+			})*/
+            
+            $(function(){
+                
+                $("nav a").css("color", "red"); //Muda a cor do elementos dentro no nav
+                $("nav a").css("text-decoration", "none").css("display", "block");
+                $("nav a:first").css("background-color", "green"); //troca a cor de fundo do primeiro elemento, (odd,even,last,nth(n),contains('blbla'))
+                
+                
+            });
+            
         </script>   
                 
     </body>
